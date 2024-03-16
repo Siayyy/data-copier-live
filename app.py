@@ -7,7 +7,7 @@ def main():
         env = sys.argv[1]
     except IndexError:
         print("No environment provided. Defaulting to 'dev'.")
-        env = 'dev'  # 使用默认值
+        env = 'dev'  # default parameter
     db = DB_DETAILS[env]
     tables = get_tables('table_list.txt')
     # for idx, table in tables.iterrows():
